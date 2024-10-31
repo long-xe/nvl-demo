@@ -1,26 +1,20 @@
-import { useState } from "react";
 // import { Button } from "../../components/Button";
-import { IconButton } from "../../components/IconButton";
+import { IconButton } from '../../components/IconButton';
+import ProgressBar from '../../components/ProgressBar';
 
 export default function Page1() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <h1>Vite + React</h1>
       <div className='card'>
-        {/* <Button
-          variant="primary"
-          size="md"
-          paddingType="md"
-          gradientType="none"
-          onClick={() => setCount((count) => count + 1)}
+        <IconButton
+          variant='colored'
+          disabled={true}
+          iconLink='/images/icons/arrow-left.svg'
         >
-          count is {count}
-        </Button> */}
-        <IconButton variant='colored' disabled={true} iconLink='/images/icons/arrow-left.svg'>
           Icon
         </IconButton>
+        <ProgressBar />
         <p className='text-red-400 '>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
