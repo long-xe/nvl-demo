@@ -36,3 +36,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated files
+fragment-masking.ts
+gql.ts
+types.ts
+graphql.ts
+/__generated__/index.ts
