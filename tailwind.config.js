@@ -37,8 +37,8 @@ module.exports = {
         'overlay-white': '#FFFFFF4D',
       },
       fontFamily: {
-        raleway: ['Raleway'],
-        inter: ['Inter'],
+        raleway: ['Raleway', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },

@@ -72,13 +72,13 @@
   .number-sm {
     @apply text-[13px] leading-[16px] font-inter font-semibold;
   }
-  .bg-gradient-1{
-     @apply bg-gradient-to-r from-[#00C8B0] from-[2%] via-[#751EDA] via-[30%] via-[#E211AF] via-[57%] to-[#FFF700] to-[96%];
+  .bg-gradient-1 {
+    @apply bg-gradient-to-r from-[#00C8B0] from-[2%] via-[#751EDA] via-[30%] via-[#E211AF] via-[57%] to-[#FFF700] to-[96%];
   }
-  .bg-linear-1{
-     @apply bg-gradient-to-r from-[#FFB800] from-[7%] via-[#28A7E3] via-[68%] to-[#00D6BD] to-[103%];
+  .bg-linear-1 {
+    @apply bg-gradient-to-r from-[#FFB800] from-[7%] via-[#28A7E3] via-[68%] to-[#00D6BD] to-[103%];
   }
-  .bg-linear-2{
-     @apply bg-gradient-to-r from-[#00DEC4] from-[8%] to-[#0998DB] to-[54%];
+  .bg-linear-2 {
+    @apply bg-gradient-to-r from-[#00DEC4] from-[8%] to-[#0998DB] to-[54%];
   }
 }
