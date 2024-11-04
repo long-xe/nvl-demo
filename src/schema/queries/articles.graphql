@@ -1,0 +1,71 @@
+query getFeaturedArticles($page: Int, $limit: Int, $sort: String) {
+  getArticles(page: $page, limit: $limit, featured: true, sort: $sort) {
+    limit
+    page
+    totalPage
+    total
+    data {
+      id
+      author
+      featured
+      Content
+      slug
+      title
+      Featured_Image
+      user_created
+      tags
+      date_created
+    }
+  }
+}
+
+query getArticles($page: Int, $limit: Int, $sort: String, $search: String) {
+  getArticles(page: $page, limit: $limit, sort: $sort, search: $search) {
+    limit
+    page
+    totalPage
+    total
+    data {
+      id
+      author
+      featured
+      Content
+      slug
+      title
+      Featured_Image
+      user_created
+      tags
+      date_created
+    }
+  }
+}
+
+query getArticleDetailBySlug($slug: String!) {
+  getArticleDetailBySlug(slug: $slug) {
+    id
+    author
+    featured
+    Content
+    title
+    Featured_Image
+    user_created
+    slug
+    tags
+    date_created
+    related {
+      related_Articles_id {
+        id
+        author
+        featured
+        Content
+        title
+        slug
+        Featured_Image
+        user_created
+        tags
+        status
+        date_created
+      }
+    }
+  }
+}
