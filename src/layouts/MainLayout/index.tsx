@@ -1,9 +1,13 @@
-import React from "react";
+import Header from '../Header';
+import { Outlet } from 'react-router-dom';
 
-interface ILayoutProps {
-  children: JSX.Element | string | React.ReactNode;
-}
-
-export default function MainLayout({ children }: ILayoutProps) {
-  return <div>{children}</div>;
+export default function MainLayout() {
+  return (
+    <>
+      <Header />
+      <main id='root-container'>
+        <Outlet />
+      </main>
+    </>
+  );
 }
