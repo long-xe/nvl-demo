@@ -1,7 +1,7 @@
 import { CodegenConfig } from '@graphql-codegen/cli';
 
 const config: CodegenConfig = {
-  // schema: 'https://backend.staging.novalearn.org/graphql',
+  schema: 'https://backend.staging.novalearn.org/graphql',
   documents: ['src/schema/**/*.graphql'],
   generates: {
     './src/__generated__/': {
